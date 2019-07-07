@@ -19,11 +19,13 @@ import {
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
 import Slide1 from "../components/Slide1/Slide1";
-import Slide2 from "../components/Slide2/Slide2";
-import Slide3 from "../components/Slide3/Slide3";
-import Slide4 from "../components/Slide4/Slide4";
-import Slide5 from "../components/Slide5/Slide5";
-import Slide6 from "../components/Slide6/Slide6";
+import CloneProjectSlide from "../components/Slide2/CloneProjectSlide";
+import ListOfRxJavaTypes from "../components/Slide3/ListOfRxJavaTypes";
+import SingleSlide from "../components/Slide4/SingleSlide";
+import ObservableSlide from "../components/Slide5/ObservableSlide";
+import CompletableSlide from "../components/Slide6/CompletableSlide";
+import FlowableSlide from "../components/Slide7/FlowableSlide";
+import MaybeSlide from "../components/Slide8/MaybeSlide";
 
 const images = {
     formidagon: require('../assets/formidable-logo.svg'),
@@ -55,11 +57,13 @@ export default class Presentation extends React.Component {
                 theme={theme}
             >
                 <Slide1/>
-                <Slide2/>
-                <Slide3/>
-                <Slide4/>
-                <Slide5/>
-                <Slide6/>
+                <CloneProjectSlide/>
+                <ListOfRxJavaTypes/>
+                <SingleSlide/>
+                <ObservableSlide/>
+                <CompletableSlide/>
+                <FlowableSlide/>
+                <MaybeSlide/>
             </Deck>
         );
     }

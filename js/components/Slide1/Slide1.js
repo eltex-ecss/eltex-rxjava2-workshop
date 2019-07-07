@@ -1,20 +1,26 @@
 import React, {Component} from 'react';
-import {Heading, Slide, Text} from "spectacle";
-
+import {Heading, Slide, Text, Link} from "spectacle";
 
 export default class Slide1 extends Component {
 
 
     render() {
         return (
-            <Slide transition={['zoom']} bgColor="primary">
-                <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-                    Spectacle Boilerplate
+            <Slide transition={['zoom']} >
+                <Heading size={1} fit caps >
+                    ReactiveX || RxJava
                 </Heading>
-                <Text margin="10px 0 0" textColor="tertiary" fit bold>
-                    open the presentation/index.js file to get started
+                <Text textSize="34px" margin="100px 0px 0px" >
+                    Konstantin Volivach
                 </Text>
+                <Text textSize="34px" italic>
+                    Middle Kotlin dev
+                </Text>
+                <Link margin="0px 0px 0px 0px" href={"https://github.com/kostya05983"}>
+                    Find me on GitHub
+                </Link>
             </Slide>
         )
+
     }
 }
