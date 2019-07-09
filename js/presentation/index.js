@@ -29,6 +29,13 @@ import MaybeSlide from "../components/Slide8/MaybeSlide";
 import SingleProps1Slide from "../components/SingleSlides/SingleProps1Slide";
 import SingleProps2Slide from "../components/SingleSlides/SingleProps2Slide";
 import ObservableProps1Slide from "../components/ObservableSlides/ObservableProps1Slide";
+import CompletableProps1Slide from "../components/Slide6/CompletableProps1Slide";
+import MaybeProps1 from "../components/Slide8/MaybeProps1";
+import FlowableProps1 from "../components/Slide7/FlowableProps1";
+import FilterSlide from "../components/FiltersSlide/FilterSlide";
+import FiltersCodeSlide from "../components/FiltersSlide/FiltersCodeSlide";
+import MapSlide from "../components/MapSlides/MapSlide";
+import MapCodeSlide from "../components/MapSlides/MapCodeSlide";
 
 const images = {
     formidagon: require('../assets/formidable-logo.svg'),
@@ -68,8 +75,15 @@ export default class Presentation extends React.Component {
                 <ObservableSlide/>
                 <ObservableProps1Slide/>
                 <CompletableSlide/>
+                <CompletableProps1Slide/>
                 <FlowableSlide/>
+                <FlowableProps1/>
                 <MaybeSlide/>
+                <MaybeProps1/>
+                <FilterSlide/>
+                <FiltersCodeSlide/>
+                <MapSlide/>
+                <MapCodeSlide/>
             </Deck>
         );
     }

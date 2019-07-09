@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Slide, Text, List, ListItem, Heading} from 'spectacle'
 
-export default class CompeltableProps1Slide extends Component {
+export default class CompletableProps1Slide extends Component {
 
     render() {
         return (
@@ -16,7 +16,6 @@ export default class CompeltableProps1Slide extends Component {
                         type
                         it interacts with is the CompletableObserver via the subscribe(CompletableObserver) method. The
                     </ListItem>
-
                     <ListItem>
                         Completable operates with the following sequential protocol:
                         onSubscribe (onError | onComplete)?
