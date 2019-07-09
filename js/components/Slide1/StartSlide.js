@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Heading, Slide, Text, Link} from "spectacle";
 
-export default class Slide1 extends Component {
+export default class StartSlide extends Component {
 
 
     render() {

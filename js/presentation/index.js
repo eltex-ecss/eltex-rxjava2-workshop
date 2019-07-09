@@ -18,14 +18,17 @@ import {
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
-import Slide1 from "../components/Slide1/Slide1";
+import StartSlide from "../components/Slide1/StartSlide";
 import CloneProjectSlide from "../components/Slide2/CloneProjectSlide";
 import ListOfRxJavaTypes from "../components/Slide3/ListOfRxJavaTypes";
-import SingleSlide from "../components/Slide4/SingleSlide";
-import ObservableSlide from "../components/Slide5/ObservableSlide";
+import SingleSlide from "../components/SingleSlides/SingleSlide";
+import ObservableSlide from "../components/ObservableSlides/ObservableSlide";
 import CompletableSlide from "../components/Slide6/CompletableSlide";
 import FlowableSlide from "../components/Slide7/FlowableSlide";
 import MaybeSlide from "../components/Slide8/MaybeSlide";
+import SingleProps1Slide from "../components/SingleSlides/SingleProps1Slide";
+import SingleProps2Slide from "../components/SingleSlides/SingleProps2Slide";
+import ObservableProps1Slide from "../components/ObservableSlides/ObservableProps1Slide";
 
 const images = {
     formidagon: require('../assets/formidable-logo.svg'),
@@ -56,11 +59,14 @@ export default class Presentation extends React.Component {
                 transitionDuration={500}
                 theme={theme}
             >
-                <Slide1/>
+                <StartSlide/>
                 <CloneProjectSlide/>
                 <ListOfRxJavaTypes/>
                 <SingleSlide/>
+                <SingleProps1Slide/>
+                <SingleProps2Slide/>
                 <ObservableSlide/>
+                <ObservableProps1Slide/>
                 <CompletableSlide/>
                 <FlowableSlide/>
                 <MaybeSlide/>
