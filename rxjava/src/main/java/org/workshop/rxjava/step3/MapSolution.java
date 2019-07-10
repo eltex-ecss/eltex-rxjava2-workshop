@@ -15,7 +15,6 @@ public class MapSolution {
         return list;
     }
 
-
     /**
      * Написать преобразование stream из TaskModel в TaskPayload, только тех заданий, у которых флаг isVisible true
      *
